@@ -121,3 +121,19 @@ Entries:
       message: TTS
   id: 11
   time: '2025-12-01T15:04:34.0000000+00:00'
+- author: Warete
+  changes:
+    - type: Add
+      message: Правила! Да!
+    - type: Add
+      message: Адекватный фон в лобби.
+    - type: Remove
+      message: SSD индикатор, ввиду забагованности.
+    - type: Tweak
+      message: Некоторые таймеры на ролях (уменьшение).
+    - type: Tweak
+      message: WonderBox вновь "починили".
+    - type: Tweak
+      message: AdminWho для всех.
+  id: 12
+  time: '2025-12-01T19:43:03.0000000+00:00'
