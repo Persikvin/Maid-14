@@ -31,10 +31,11 @@ public sealed partial class RadioChannelPrototype : IPrototype
     public string LocalizedName => Loc.GetString(Name);
 
     /// <summary>
-    /// Single-character prefix to determine what channel a message should be sent to.
+    /// Character prefixes to determine what channel a message should be sent to.
+    /// Supports multiple keycodes to allow for different keyboard layouts (e.g., ASCII and Cyrillic).
     /// </summary>
-    [DataField("keycode")]
-    public char KeyCode { get; private set; } = '\0';
+    [DataField("keycodes")]
+    public List<char> KeyCodes { get; private set; } = new() {'\0'}; //Maid edit
 
     [DataField("frequency")]
     public int Frequency { get; private set; } = 0;
