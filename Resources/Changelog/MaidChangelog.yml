@@ -213,3 +213,15 @@ Entries:
         RampingStationEventScheduler.
   id: 18
   time: '2025-12-18T08:30:54.0000000+00:00'
+- author: Warete
+  changes:
+    - type: Tweak
+      message: >-
+        WonderBox, Atom и шаттл эвакуации были обновлены в честь Нового Года -
+        pahan_chiiiil.
+    - type: Tweak
+      message: Шкафы больше не плодят другие шкафы.
+    - type: Tweak
+      message: Спрайтики Плазменного баллона.
+  id: 19
+  time: '2025-12-28T16:32:54.0000000+00:00'
