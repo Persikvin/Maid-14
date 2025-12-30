@@ -1859,14 +1859,14 @@ namespace Content.Client.Lobby.UI
             //  TODO: Remove obsolete method
             _prototypeManager.Index(species.Prototype).TryGetComponent<FixturesComponent>(out var fixture, _entManager.ComponentFactory);
 
-            if (fixture != null)
-            {
-                var avg = (Profile.Width + Profile.Height) / 2;
-                var weight = FixtureSystem.GetMassData(fixture.Fixtures["fix1"].Shape, fixture.Fixtures["fix1"].Density).Mass * avg;
-                WeightLabel.Text = Loc.GetString("humanoid-profile-editor-weight-label", ("weight", (int) weight));
-            }
-            else // Whelp, the fixture doesn't exist, guesstimate it instead
-                WeightLabel.Text = Loc.GetString("humanoid-profile-editor-weight-label", ("weight", (int) 71));
+            // if (fixture != null) # Maid
+            // {
+            //     var avg = (Profile.Width + Profile.Height) / 2;
+            //     var weight = FixtureSystem.GetMassData(fixture.Fixtures["fix1"].Shape, fixture.Fixtures["fix1"].Density).Mass * avg;
+            //     WeightLabel.Text = Loc.GetString("humanoid-profile-editor-weight-label", ("weight", (int) weight));
+            // }
+            // else // Whelp, the fixture doesn't exist, guesstimate it instead
+            //     WeightLabel.Text = Loc.GetString("humanoid-profile-editor-weight-label", ("weight", (int) 71)); # Maid
 
             // SpriteViewS.InvalidateMeasure();
             // SpriteViewN.InvalidateMeasure();
